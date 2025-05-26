@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EduTech - Learn. Grow. Succeed.</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
 </head>
 <body>
 
   <!-- Header -->
   <header>
     <div class="container">
-        <div class="logo">
-            <img src="edulogo.avif" alt="EduTech Logo" />
-            <span>EduTech</span>
-          </div>
-          
+      <div class="logo">
+        <img src="edulogo.avif" alt="EduTech Logo" />
+        <span>EduTech</span>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <nav>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
@@ -32,45 +32,50 @@
     </div>
   </header>
 
-  <!-- Home / Hero Section -->
+  <!-- Home Section -->
   <section id="home" class="hero">
     <div class="container">
-      <h2>Empowering Minds with Quality Education</h2>
+      <h1>Empowering Minds with Quality Education</h1>
       <p>Welcome to EduTech – your gateway to online learning and academic success.</p>
-      <p>Explore interactive courses, expert mentors, and flexible learning paths tailored for students, professionals, and lifelong learners.</p>
-      <p>Join our learning revolution and master skills that shape the future.</p>
       <a href="#login" class="btn">Student Login</a>
     </div>
   </section>
 
   <!-- Courses Section -->
-  <section id="courses" class="features">
+  <section id="courses" class="section-light">
     <div class="container">
       <h2>Popular Courses</h2>
-      <p>✔ Web Development Bootcamp<br>✔ Data Science & Python<br>✔ Digital Marketing Essentials<br>✔ Competitive Exam Prep (IIT-JEE, NEET, GATE)</p>
+      <ul class="course-list">
+        <li>💻 Web Development Bootcamp</li>
+        <li>📊 Data Science & Python</li>
+        <li>📣 Digital Marketing Essentials</li>
+        <li>🧠 Competitive Exam Prep (IIT-JEE, NEET, GATE)</li>
+      </ul>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
+  <section id="contact" class="section-dark">
     <div class="container">
-      <h2>Get in Touch</h2>
-      <p>Email: sreejaponnagani.com</p>
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:sreejaponnagani.com">sreejaponnagani.com</a></p>
       <p>Phone: +91 93813 98012</p>
     </div>
   </section>
 
-  <!-- About Us Section -->
-  <section id="about-us" class="get-started">
+  <!-- About Section -->
+  <section id="about-us" class="section-light">
     <div class="container">
       <h2>About EduTech</h2>
-      <p>EduTech is a forward-thinking online education platform committed to bridging the gap between learning and application.
-        Our mission is to provide accessible, high-quality education to students and professionals worldwide.</p>
+      <p>
+        EduTech is a forward-thinking online education platform committed to bridging the gap between learning and application.
+        Our mission is to provide accessible, high-quality education to students and professionals worldwide.
+      </p>
     </div>
   </section>
 
-  <!-- Login Form Section -->
-  <section id="login" class="login-section">
+  <!-- Login Section -->
+  <section id="login" class="section-form">
     <div class="container">
       <h2>Student Login</h2>
       <form class="login-form">
@@ -87,12 +92,42 @@
     <div class="container">
       <p>&copy; 2025 EduTech. All rights reserved.</p>
       <div class="social-links">
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
-        <a href="https://github.com" target="_blank">GitHub</a> |
-        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="#">LinkedIn</a> | 
+        <a href="#">GitHub</a> | 
+        <a href="#">Twitter</a>
       </div>
     </div>
   </footer>
 
+  <script>
+  // Header scroll effect
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
+  // Hamburger menu toggle
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (hamburger) {
+    hamburger.addEventListener('click', function() {
+      this.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  }
+</script>
 </body>
 </html>
