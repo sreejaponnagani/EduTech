@@ -1,0 +1,71 @@
+🎓 EduTech – A Simple Educational Website Landing Page
+Hi there! 👋
+Welcome to EduTech, a clean, responsive, and beginner-friendly educational landing page built using just HTML and CSS. It’s perfect for showcasing an online learning platform, coaching center, or any education-based service.
+
+✨ What’s Inside?
+This website includes:
+
+✅ A modern navigation bar with a logo and links
+
+🎯 A colorful and eye-catching hero section with a CTA (Call to Action)
+
+📚 A Features section to highlight what the platform offers
+
+🧑‍🏫 An About Us section with a quick overview of the team or mission
+
+📞 A Contact section to get in touch
+
+🔐 A simple and clean Login Form
+
+🌐 A neat Footer with social media links
+
+All wrapped up in a smooth, animated, and mobile-responsive design.
+
+🧱 Project Structure
+Here's how everything is organized:
+
+css
+Copy
+Edit
+📁 EduTech/
+├── index.html        → Main webpage
+├── style.css         → CSS styling file
+└── edulogo.avif      → Logo image (used in navbar)
+🛠 Tech Used
+HTML5 – to structure the web page
+
+CSS3 – for styling and responsiveness
+
+AVIF Image Format – for the logo (modern and lightweight)
+
+🚀 Getting Started
+To run the project on your system:
+
+Download or clone the repo.
+
+Make sure index.html, style.css, and edulogo.avif are all in the same folder.
+
+Open index.html with any browser (Chrome, Firefox, Edge, etc.).
+
+Boom 💥 — You’ve got your landing page live locally!
+
+✅ Tip: If your browser doesn’t show the logo (edulogo.avif), try converting it to .png or .jpg and update the <img src="..."> path.
+
+👩‍💻 About the Creator
+Created with ❤️ by Sreeja Ponnagani
+
+📧 Email: sreejaponnagani@gmail.com
+
+🐙 GitHub: @sreejaponnagani
+
+🌍 Based in: Hyderabad, India
+
+📌 Extra Notes
+This is a frontend-only project, no backend or database is connected.
+
+You can easily customize the text, colors, or add more sections to fit your use case.
+
+It's beginner-friendly, and great for portfolios or educational mini-projects.
+
+📜 License
+Free to use for personal and academic purposes. No attribution needed, but appreciated! 😊
