@@ -63,6 +63,7 @@ header.scrolled {
 }
 
 .logo img {
+  justify-self: center;
   height: 40px;
   width: auto;
   transition: transform 0.3s ease;
@@ -83,6 +84,7 @@ nav {
   display: flex;
   list-style: none;
   gap: 30px;
+  margin-left: auto; /* This pushes the links to the right */
 }
 
 .nav-links a {
